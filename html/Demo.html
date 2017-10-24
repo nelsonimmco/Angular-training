@@ -4,10 +4,17 @@
 <body>
 
 <div ng-app="">
-  <p>Name : <input type="text" ng-model="name"></p>
-  <p>Age : <input type="text" ng-model="age"></p>
-  <h1>Hello {{name}}</h1>
+Hello Mr. {{name}}
+  <p>Name : <input type="text" ng-model="name" ng-pattern="/^[\w -]*$/"></p>
+  <p>{{name}} Age : <input type="text" placeholder="Enter your age {{name}}!!"></p>
+  <input type="button" value="Submit {{name}}" />
+  <p ng-bind="name" /><p ng-trim=false> test {{name}} </p>
 </div>
+
+<div ng-app="">
+ Hello Mr. {{name}}
+ 
+ </div>
 
 </body>
 </html>

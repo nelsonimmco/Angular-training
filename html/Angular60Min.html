@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en-US" ng-app="">
+<script
+	src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
+<body ng-init="students_names=['nelson','vishnu', 'sangeeth', 'athira', 'annu']">
+	
+	<div>
+		Teacher name: <input type="text" ng-model="teacher_name" placeholder="Enter teacher name">
+<!-- 		<button type="button" ng-click="showStudentList()" >Show student list  </button>  -->
+	</div>
+ 	
+ 	<div>
+ 		<ol>
+ 			<li ng-repeat="student_name in students_names">{{student_name}}  </li>
+ 		</ol>
+ 	</div>
+ 
+</body>
+
+</html>
+
+<!-- Directive learned -->
+<!-- ng-app -->
+<!-- ng-init -->
+<!-- ng-module -->
+<!-- ng-repeat -->
